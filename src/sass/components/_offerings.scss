@@ -1,0 +1,19 @@
+.image__offering{
+    display: none;
+    @media screen and(min-width:768px) and (max-width:1279px){
+        display: block;
+        
+    }
+    @media screen and(min-width:1280px){
+        display: none;
+    }
+}
+.icon-media{
+    fill: hsl(77, 99%, 35%);}
+
+.offering{
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+background-image: url(../images/offering/background@1x-desk.png);
+}
