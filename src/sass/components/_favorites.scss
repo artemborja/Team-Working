@@ -1,0 +1,19 @@
+.favorites {
+  margin: 0 auto;
+  padding-top: 60px;
+  padding-bottom: 60px;
+  background-color: var(--bgr-color);
+  @include tablet {
+    padding-top: 100px;
+    padding-bottom: 140px;
+  }
+  @include desktop {
+    padding-bottom: 100px;
+  }
+}
+
+.favorites__list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}

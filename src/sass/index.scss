@@ -1,2 +1,15 @@
+@import './base/reset';
+@import './base/base';
+@import './base/hidden';
+@import './base/button';
+@import './utils/mixins';
+@import './utils/variables';
+@import './components/header';
+@import './components/hero';
+@import './components/offerings';
+@import './components/favorites';
+@import './components/customers-say';
+@import './components/subscribe';
+@import './components/footer';
 @import './common';
 @import './example';
