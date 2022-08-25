@@ -1,34 +1,65 @@
 <section class="subscribe container">
-    <div class="subscribe__block"></div>
-    <h2 class="subscribe__title">Subscribe To Get Special Offers</h2>
-    <p class="subscribe__desc">
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse
-        varius enim in eros elementum tristique.
-    </p>
-    <form>
-        <div class="subscribe__mail">
-            <input class="subscribe__input" type="email" name="email" placeholder="Enter your email" id="user_email" />
+  <div class="subscribe__block"></div>
+  <h2 class="subscribe__title">Subscribe To Get Special Offers</h2>
+  <p class="subscribe__desc">
+    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius
+    enim in eros elementum tristique.
+  </p>
+  <form>
+    <div class="subscribe__mail">
+      <input
+        class="subscribe__input"
+        type="email"
+        name="email"
+        placeholder="Enter your email"
+        name="mail"
+      />
 
-            <button class="subscribe__button" type="submit">Subscribe</button>
-        </div>
-    </form>
+      <div class="subscribe__notification">
+        <svg
+          class="subscribe__icon"
+          width="12px"
+          height="12px"
+        >
+          <use
+            class="subscribe__icon--error"
+            href="./images/sprite/sprite-optimised.svg#icon-error"
+          ></use></svg
+      ><span class="subscribe__notification--text">Not a valid email address (example&#64;email.com)</span></div>
 
-    <picture>
-        <source media="(min-width: 1280px)" srcset="
-              ./images/subscribe/banan@1x_desctop.png 1x,
-              ./images/subscribe/banan@2x_desctop.png 2x
-            " />
+      <button class="subscribe__button" type="submit">Subscribe</button>
+    </div>
+  </form>
 
-        <source media="(min-width: 768px)" srcset="
-              ./images/subscribe/banan@1x_tablet.png 1x,
-              ./images/subscribe/banan@2x_tablet.png 2x
-            " />
+  <picture>
+    <source
+      media="(min-width: 1280px)"
+      srcset="
+        ./images/subscribe/banan@1x_desctop.png 1x,
+        ./images/subscribe/banan@2x_desctop.png 2x
+      "
+    />
 
-        <source media="(max-width: 767px)" srcset="
-              ./images/subscribe/banan@1x_mobile.png 1x,
-              ./images/subscribe/banan@2x_mobile.png 2x
-            " />
+    <source
+      media="(min-width: 768px)"
+      srcset="
+        ./images/subscribe/banan@1x_tablet.png 1x,
+        ./images/subscribe/banan@2x_tablet.png 2x
+      "
+    />
 
-        <img class="subscribe__img" src="./images/subscribe/banan@1x_mobile.png" alt="Banana" />
-    </picture>
+    <source
+      media="(max-width: 767px)"
+      srcset="
+        ./images/subscribe/banan@1x_mobile.png 1x,
+        ./images/subscribe/banan@2x_mobile.png 2x
+      "
+    />
+
+    <img
+      class="subscribe__img"
+      src="./images/subscribe/banan@1x_mobile.png"
+      alt="Banana"
+    />
+  </picture>
 </section>
