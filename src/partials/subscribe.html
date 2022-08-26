@@ -1,5 +1,5 @@
-<section class="subscribe container">
-  <div class="subscribe__block"></div>
+<section class="subscribe">
+  <div class="container">
   <h2 class="subscribe__title">Subscribe To Get Special Offers</h2>
   <p class="subscribe__desc">
     Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius
@@ -7,25 +7,26 @@
   </p>
   <form>
     <div class="subscribe__mail">
+    <label class="visually-hidden" for="email"></label>
       <input
         class="subscribe__input"
         type="email"
-        name="email"
         placeholder="Enter your email"
         name="mail"
+        id="email"
       />
 
       <div class="subscribe__notification">
-        <svg
-          class="subscribe__icon"
-          width="12px"
-          height="12px"
-        >
+        <svg class="subscribe__icon" width="12px" height="12px">
           <use
             class="subscribe__icon--error"
             href="./images/sprite/sprite-optimised.svg#icon-error"
           ></use></svg
-      ><span class="subscribe__notification--text">Not a valid email address (example&#64;email.com)</span></div>
+        ><span class="subscribe__notification--text"
+          >Not a valid email address (example&#64;email.com)</span
+        >
+      </div>
+      
 
       <button class="subscribe__button" type="submit">Subscribe</button>
     </div>
@@ -62,4 +63,5 @@
       alt="Banana"
     />
   </picture>
+  </div>
 </section>
