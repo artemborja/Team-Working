@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <section class="hero-section">
+        <div class="container hero_container">
+            <h1 class="hero__title">Enjoy Your Favorite Food From Anywhere</h1>
+            <p class="hero__title--text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique. Duis cursus, mi quis viverra ornare, eros dolor interdum nulla, ut commodo diam libero vitae erat.</p>
+            <button class="hero__btn" type="button">Order Now</button>
+        </div>
+        <div class="img-container">
+            <article class="change-food">
+                <picture>
+                    <source media="(min-width: 1280px)" 
+                    srcset="
+                    ./images/hero/ellipse@1x_lg.png 1x,
+                    ./images/hero/ellipse@2x_lg.png 2x"
+                     type="image/png">
+
+                     <source media="(min-width: 768px)" 
+                     srcset="
+                     ./images/hero/ellipse@1x_md.png 1x,
+                     ./images/hero/ellipse@2x_md.png 2x"
+                      type="image/png">
+
+                      <img
+                      class="hero__picture"
+                      src="./images/hero/ellipse@2x_lg.png "
+                      alt="ellipse"
+                      width="580px" height="580px"
+                    />
+                </picture> 
+            </article>
+        </div>    
+    </section>
+</body>
+</html>
