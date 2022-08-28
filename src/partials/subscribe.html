@@ -1,5 +1,7 @@
 <section class="subscribe">
+  <div class="subscribe__picture">
   <picture>
+    <!-- <div class="subscribe__picrure subscribe__picrure--mobile"> -->
     <source
       media="(min-width: 1280px)"
       type="image/png"
@@ -8,7 +10,8 @@
         ./images/subscribe/banan@2x_desctop.png 2x
       "
     />
-
+    <!-- </div> -->
+<!-- <div class="subscribe__picrure subscribe__picrure--tablet"> -->
     <source
       media="(min-width: 768px)"
       type="image/png"
@@ -17,7 +20,8 @@
         ./images/subscribe/banan@2x_tablet.png 2x
       "
     />
-
+    <!-- </div> -->
+<!-- <div class="subscribe__picrure subscribe__picrure--desctop"> -->
     <source
       media="(max-width: 767px)"
       type="image/png"
@@ -26,6 +30,7 @@
         ./images/subscribe/banan@2x_mobile.png 2x
       "
     />
+    <!-- </div> -->
 
     <img
       class="subscribe__img"
@@ -33,6 +38,8 @@
       alt="Banana"
     />
   </picture>
+  </div>
+  
 
   <h1 class="subscribe__title">Subscribe To Get Special Offers</h1>
   <p class="subscribe__desc">
@@ -60,7 +67,7 @@
           >Not a valid email address (example&#64;email.com)</span
         >
       </div>
-      <button class="subscribe__button" type="submit">Subscribe</button>
+      <button data-modal-open class="subscribe__button" type="submit">Subscribe</button>
     </div>
   </form>
 </section>
