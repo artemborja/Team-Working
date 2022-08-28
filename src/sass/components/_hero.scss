@@ -1,23 +1,26 @@
-.hero-section {
+.hero {
     display: flex;
     padding-left: 20px;
     padding-right: 20px;
 
-    max-width: 280px;
+    // max-width: 280px;
 
     @media screen and (min-width: 768px) {
 
         padding-left: 34px;
         padding-right: 34px;
-        max-width: 704px;
+        // max-width: 704px;
     }
 
     @media screen and (min-width: 1280px) {
 
         padding-left: 16px;
         padding-right: 16px;
-        max-width: 1248px;
+        // max-width: 1248px;
     }
+}
+.container {
+    display: flex;
 }
 .hero__title {
 
@@ -98,31 +101,78 @@
 
     cursor: pointer;
 }
-.img-container {
+
+.swiper {
+    max-width: 528px;
+    max-height: 528px;
+
     display: flex;
-    margin-top: 14px;
-    margin-right: 14px;
-    margin-bottom: 14px;
-    margin-left: 152px;
 
         @media screen and (max-width: 767px) {
         display: none;
     }
-}
-.example-food {
+         @media screen and (min-width: 768px) {
+
+            margin-top: 163px;
+            margin-right: 14px;
+            margin-bottom: 14px;
+            margin-left: 40px;
+    }
+    @media screen and (min-width: 1280px) {
+        margin-top: 14px;
+        margin-right: 14px;
+        margin-bottom: 14px;
+        margin-left: 152px;
+    }
+  }
+
+.hero__eat--card {
+    border: 14px solid #FFE550;
+    border-radius: 50%;
     position: relative;
 }
-.ellipse {
-    border-radius: 26px;
+
+.hero__eat--card:hover,
+.hero__eat--card:focus {
+    border: 14px solid  #BBF330;
 }
-.eat-img {
+
+.btn-back {
     position: absolute;
-    border-radius: 269px;
-    position: absolute;
-    transform: translate(-50%, -50%);
-    top: 50%;
-    left: 50%;
+    top: 45%;
+    left: -3%;
+
+    border-radius: 4px;
+    border: #FFFFFF;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.06);
+    background-color: #FFFFFF;
+    
 }
+.btn-next {
+    position: absolute;
+    top: 45%;
+    right: -3%;
+
+    border-radius: 4px;
+    border: #FFFFFF;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.06);
+    background-color: #FFFFFF;
+}
+
+// .example-food {
+//     position: relative;
+// }
+// .ellipse {
+//     border-radius: 26px;
+// }
+// .eat-img {
+//     position: absolute;
+//     border-radius: 269px;
+//     position: absolute;
+//     transform: translate(-50%, -50%);
+//     top: 50%;
+//     left: 50%;
+// }
 // .img-container {
 //     display: flex;
 
@@ -167,4 +217,48 @@
 //     position: absolute;
 //     top: 260px;
 //     right: 0;
+// }
+//   .swiper-button-next {
+//     position: absolute;
+//   }
+// .img-container {
+//     display: flex;
+//     margin-top: 14px;
+//     margin-right: 14px;
+//     margin-bottom: 14px;
+//     margin-left: 152px;
+
+//     position: relative;
+
+//         @media screen and (max-width: 767px) {
+//         display: none;
+//     }
+//     //      @media screen and (min-width: 768px) {
+//     //     margin-top: 163px;
+//     // }
+//     // @media screen and (min-width: 768px) {
+//     //     margin-top: 14px;
+//     // }
+// }
+//   .swiper-button-next {
+//     position: absolute;
+//   }
+// .img-container {
+//     display: flex;
+//     margin-top: 14px;
+//     margin-right: 14px;
+//     margin-bottom: 14px;
+//     margin-left: 152px;
+
+//     position: relative;
+
+//         @media screen and (max-width: 767px) {
+//         display: none;
+//     }
+//     //      @media screen and (min-width: 768px) {
+//     //     margin-top: 163px;
+//     // }
+//     // @media screen and (min-width: 768px) {
+//     //     margin-top: 14px;
+//     // }
 // }
