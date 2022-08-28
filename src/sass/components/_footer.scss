@@ -1,8 +1,47 @@
 .footer {
   padding: 60px 0;
 
+  @media screen and (max-width: 767px) {
+    max-width: 480px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
   @include tablet {
     padding: 100px 0;
+  }
+
+  background-image: url(../images/footer/apple-mob@1x.png),
+    url(../images/footer/orange-mob@1x.png),
+    url(../images/footer/fruits-mob@1x.png);
+  background-repeat: no-repeat;
+  background-position: 0 132px, top 0 right 0, bottom;
+  background-size: 110px, 104px, 253px;
+
+  @include retina {
+    background-image: url(../images/footer/apple-mob@2x.png),
+      url(../images/footer/orange-mob@2x.png),
+      url(../images/footer/fruits-mob@2x.png);
+  }
+
+  @include tablet {
+    background-image: url(../images/footer/fruit-tablet@1x.png);
+    background-position: bottom 0 center;
+    background-size: 785px;
+
+    @include retina {
+      background-image: url(../images/footer/fruit-tablet@2x.png);
+    }
+  }
+
+  @include desktop {
+    background-image: url(../images/footer/fruit-desktop@1x.png);
+    background-position: bottom;
+    background-size: 1211px;
+
+    @include retina {
+      background-image: url(../images/footer/fruit-desktop@2x.png);
+    }
   }
 }
 
@@ -22,7 +61,7 @@
 
   @media screen and (max-width: 767px) {
     justify-content: space-between;
-    padding-right: 101px;
+    padding-right: 81px;
   }
 
   @include tablet {
@@ -102,14 +141,17 @@
   @media screen and (max-width: 767px) {
     max-width: 279px;
     margin-right: auto;
+
+    margin-bottom: 60px;
   }
 
-  @media screen and (max-width: 1279px) {
-    margin-bottom: 60px;
+  @include tablet {
+    margin-bottom: 100px;
   }
 
   @include desktop {
     margin-left: auto;
+    margin-bottom: 0;
   }
 }
 
