@@ -1,71 +1,66 @@
 <section class="subscribe">
-  <div class="container">
-    <div class="subscribe__picture">
-      <picture>
-        <source
-          media="(min-width: 1280px)"
-          type="image/png"
-          srcset="
-            ./images/subscribe/banan@1x_desctop.png 1x,
-            ./images/subscribe/banan@2x_desctop.png 2x
-          "
-        />
+  <picture>
+    <source
+      media="(min-width: 1280px)"
+      type="image/png"
+      srcset="
+        ./images/subscribe/banan@1x_desctop.png 1x,
+        ./images/subscribe/banan@2x_desctop.png 2x
+      "
+    />
 
-        <source
-          media="(min-width: 768px)"
-          type="image/png"
-          srcset="
-            ./images/subscribe/banan@1x_tablet.png 1x,
-            ./images/subscribe/banan@2x_tablet.png 2x
-          "
-        />
+    <source
+      media="(min-width: 768px)"
+      type="image/png"
+      srcset="
+        ./images/subscribe/banan@1x_tablet.png 1x,
+        ./images/subscribe/banan@2x_tablet.png 2x
+      "
+    />
 
-        <source
-          media="(max-width: 767px)"
-          type="image/png"
-          srcset="
-            ./images/subscribe/banan@1x_mobile.png 1x,
-            ./images/subscribe/banan@2x_mobile.png 2x
-          "
-        />
+    <source
+      media="(max-width: 767px)"
+      type="image/png"
+      srcset="
+        ./images/subscribe/banan@1x_mobile.png 1x,
+        ./images/subscribe/banan@2x_mobile.png 2x
+      "
+    />
 
-        <img
-          class="subscribe__img"
-          src="./images/subscribe/banan@1x_mobile.png"
-          alt="Banana"
-        />
-      </picture>
+    <img
+      class="subscribe__img"
+      src="./images/subscribe/banan@1x_mobile.png"
+      alt="Banana"
+    />
+  </picture>
+
+  <h1 class="subscribe__title">Subscribe To Get Special Offers</h1>
+  <p class="subscribe__desc">
+    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius
+    enim in eros elementum tristique.
+  </p>
+  <form>
+    <div class="subscribe__mail">
+      <label class="visually-hidden" for="email"></label>
+      <input
+        class="subscribe__input"
+        type="email"
+        placeholder="Enter your email"
+        name="mail"
+        id="email"
+      />
+
+      <div class="subscribe__notification">
+        <svg class="subscribe__icon" width="12px" height="12px">
+          <use
+            class="subscribe__icon--error"
+            href="./images/sprite/sprite-optimised.svg#icon-error"
+          ></use></svg
+        ><span class="subscribe__notification--text"
+          >Not a valid email address (example&#64;email.com)</span
+        >
+      </div>
+      <button class="subscribe__button" type="submit">Subscribe</button>
     </div>
-    <div class="subscribe__content">
-      <h2 class="subscribe__title">Subscribe To Get Special Offers</h2>
-      <p class="subscribe__desc">
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse
-        varius enim in eros elementum tristique.
-      </p>
-      <form>
-        <div class="subscribe__mail">
-          <label class="visually-hidden" for="email"></label>
-          <input
-            class="subscribe__input"
-            type="email"
-            placeholder="Enter your email"
-            name="mail"
-            id="email"
-          />
-
-          <div class="subscribe__notification">
-            <svg class="subscribe__icon" width="12px" height="12px">
-              <use
-                class="subscribe__icon--error"
-                href="./images/sprite/sprite-optimised.svg#icon-error"
-              ></use></svg
-            ><span class="subscribe__notification--text"
-              >Not a valid email address (example&#64;email.com)</span
-            >
-          </div>
-          <button class="subscribe__button" type="submit">Subscribe</button>
-        </div>
-      </form>
-    </div>
-  </div>
+  </form>
 </section>
