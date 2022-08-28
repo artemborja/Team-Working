@@ -101,10 +101,14 @@
 
     cursor: pointer;
 }
-
+.second-container {
+    position: relative;
+}
 .swiper {
     max-width: 528px;
     max-height: 528px;
+
+    // position: relative;
 
     display: flex;
 
@@ -129,13 +133,18 @@
 .hero__eat--card {
     border: 14px solid #FFE550;
     border-radius: 50%;
-    position: relative;
+    // position: relative;
 }
 
 .hero__eat--card:hover,
 .hero__eat--card:focus {
     border: 14px solid  #BBF330;
 }
+// .btn-right {
+//     position: absolute;
+//     top: 45%;
+//     left: -3%; 
+// }
 
 .btn-back {
     position: absolute;
