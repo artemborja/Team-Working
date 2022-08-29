@@ -32,8 +32,19 @@
               class="footer-form__input"
               type="email"
               placeholder="Enter your email"
-              name="user-email"
+              name="mail"
             />
+
+            <div class="notification">
+              <svg class="notification__icon" width="12" height="12">
+                <use
+                  href="./images/sprite/sprite-optimised.svg#icon-error"
+                ></use>
+              </svg>
+              <span class="notification__text"
+                >Not a valid email address (example&#64;email.com)</span
+              >
+            </div>
 
             <button class="button footer__button" type="submit">
               Subscribe
