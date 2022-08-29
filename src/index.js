@@ -1,13 +1,6 @@
-import "./modal";
-import "./header-scroll";
-
-$(document).ready(function(){
-    $('.block__title').click(function(event) {
-       $(this).toggleClass('active').next().slideToggle(300);
-    });
-});
-
-import './swiper-slider';
+import "./js/modal.js";
+import "./js/header-scroll.js";
+import './js/header-scroll.js';
 
 
 
