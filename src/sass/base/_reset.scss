@@ -20,14 +20,10 @@ button {
 
 img {
   display: block;
-  max-width: 100%;
+  width: 100%;
   height: auto;
-}
-
-body {
-  font-family: 'DM Sans', 'Titan One', sans-serif;
-  background-color: white;
-  color: black;
+  object-fit: cover;
+  object-position: center;
 }
 
 .list {
