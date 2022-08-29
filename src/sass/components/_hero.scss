@@ -1,171 +1,159 @@
 .hero {
-    display: flex;
-    padding-left: 20px;
-    padding-right: 20px;
+  display: flex;
+  padding-left: 20px;
+  padding-right: 20px;
 
-    // max-width: 280px;
+  // max-width: 280px;
 
-    @media screen and (min-width: 768px) {
+  @media screen and (min-width: 768px) {
+    padding-left: 34px;
+    padding-right: 34px;
+    // max-width: 704px;
+  }
 
-        padding-left: 34px;
-        padding-right: 34px;
-        // max-width: 704px;
-    }
-
-    @media screen and (min-width: 1280px) {
-
-        padding-left: 16px;
-        padding-right: 16px;
-        // max-width: 1248px;
-    }
+  @media screen and (min-width: 1280px) {
+    padding-left: 16px;
+    padding-right: 16px;
+    // max-width: 1248px;
+  }
 }
-.container {
-    display: flex;
-}
+
 .hero__title {
+  margin-top: 60px;
 
-    margin-top: 60px;
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 28px;
+  line-height: 1.18;
 
-    font-family: 'Roboto';
-    font-style: normal;
-    font-weight: 700;
-    font-size: 28px;
+  color: #2c2c2c;
+
+  width: 280px;
+
+  @media screen and (min-width: 768px) {
+    font-size: 42px;
+    line-height: 120%;
+    width: 537px;
+  }
+
+  @media screen and (min-width: 1280px) {
+    margin-top: 159px;
+    font-size: 48px;
     line-height: 1.18;
-
-    color: #2C2C2C;
-
-    width: 280px;
-
-
-    @media screen and (min-width: 768px) {
-
-        font-size: 42px;
-        line-height: 120%;
-        width: 537px;
-    }
-
-    @media screen and (min-width: 1280px) {
-
-        margin-top: 159px;
-        font-size: 48px;
-        line-height: 1.18;
-        width: 502px;
-    }
+    width: 502px;
+  }
 }
 .hero__title--text {
-    margin-top: 28px;
+  margin-top: 28px;
+  margin-bottom: 40px;
+
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 150%;
+
+  color: #2c2c2c;
+
+  width: 266px;
+
+  @media screen and (min-width: 768px) {
     margin-bottom: 40px;
 
-    font-family: 'Roboto';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 14px;
-    line-height: 150%;
-    
-    color: #2C2C2C;
+    font-size: 16px;
+    width: 336px;
+  }
 
-    width: 266px;
-
-
-    @media screen and (min-width: 768px) {
-        margin-bottom: 40px;
-
-        font-size: 16px;
-        width: 336px;
-    }
-
-    @media screen and (min-width: 1280px) {
-        margin-bottom: 40px;
-        font-size: 16px;
-        width: 502px;
-    }
+  @media screen and (min-width: 1280px) {
+    margin-bottom: 40px;
+    font-size: 16px;
+    width: 502px;
+  }
 }
 
 .hero__btn {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 13px;
+  line-height: 150%;
 
-    font-family: 'Roboto';
-    font-style: normal;
-    font-weight: 500;
-    font-size: 13px;
-    line-height: 150%;
-    
-    text-align: center;
-    
-    color: #2C2C2C;
+  text-align: center;
 
-    background-color: #BBF330;
-    border-radius: 30px;
-    border: solid #BBF330;
+  color: #2c2c2c;
 
-    width: 92px;
+  background-color: #bbf330;
+  border-radius: 30px;
+  border: solid #bbf330;
 
-    cursor: pointer;
+  width: 92px;
+
+  cursor: pointer;
 }
 .second-container {
-    position: relative;
+  position: relative;
 }
 .swiper {
-    max-width: 528px;
-    max-height: 528px;
+  max-width: 528px;
+  max-height: 528px;
 
-    // position: relative;
+  // position: relative;
 
-    display: flex;
+  display: flex;
 
-        @media screen and (max-width: 767px) {
-        display: none;
-    }
-         @media screen and (min-width: 768px) {
-
-            margin-top: 163px;
-            margin-right: 14px;
-            margin-bottom: 14px;
-            margin-left: 40px;
-    }
-    @media screen and (min-width: 1280px) {
-        margin-top: 14px;
-        margin-right: 14px;
-        margin-bottom: 14px;
-        margin-left: 152px;
-    }
+  @media screen and (max-width: 767px) {
+    display: none;
   }
+  @media screen and (min-width: 768px) {
+    margin-top: 163px;
+    margin-right: 14px;
+    margin-bottom: 14px;
+    margin-left: 40px;
+  }
+  @media screen and (min-width: 1280px) {
+    margin-top: 14px;
+    margin-right: 14px;
+    margin-bottom: 14px;
+    margin-left: 152px;
+  }
+}
 
 .hero__eat--card {
-    border: 14px solid #FFE550;
-    border-radius: 50%;
-    // position: relative;
+  border: 14px solid #ffe550;
+  border-radius: 50%;
+  // position: relative;
 }
 
 .hero__eat--card:hover,
 .hero__eat--card:focus {
-    border: 14px solid  #BBF330;
+  border: 14px solid #bbf330;
 }
 // .btn-right {
 //     position: absolute;
 //     top: 45%;
-//     left: -3%; 
+//     left: -3%;
 // }
 
 .btn-back {
-    position: absolute;
-    top: 45%;
-    left: -3%;
+  position: absolute;
+  top: 45%;
+  left: -3%;
 
-    border-radius: 4px;
-    border: #FFFFFF;
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.06);
-    background-color: #FFFFFF;
-    
+  border-radius: 4px;
+  border: #ffffff;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.06);
+  background-color: #ffffff;
 }
 .btn-next {
-    position: absolute;
-    top: 45%;
-    right: -3%;
+  position: absolute;
+  top: 45%;
+  right: -3%;
 
-    border-radius: 4px;
-    border: #FFFFFF;
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.06);
-    background-color: #FFFFFF;
+  border-radius: 4px;
+  border: #ffffff;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.06);
+  background-color: #ffffff;
 }
 
 // .example-food {
