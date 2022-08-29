@@ -10,7 +10,7 @@
 
 @media screen and (min-width: 768px) {
   .customers {
-    background-image: url('/images/customers/customers-768.png');
+    background-image: url('../images/customers/customers-768.png');
   }
 }
 @media screen and (min-width: 1200px) {
@@ -19,7 +19,7 @@
     height: 647px;
     margin: 0 auto;
     position: absolute;
-    background-image: url('/images/customers/customers.png');
+    background-image: url('../images/customers/customers.png');
   }
 }
 
