@@ -1,0 +1,313 @@
+.backdrop {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 100;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.2);
+
+  transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.backdrop.is-hidden {
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+}
+
+.modal {
+  position: absolute;
+
+  top: 50%;
+  left: 50%;
+
+  transform: translate(-50%, -50%) scale(1);
+  width: 300px;
+
+  background-color: #fff;
+  box-shadow: 0px 1px 3px rgba(72, 207, 35, 1),
+    0px 1px 2px rgba(156, 247, 131, 1), 0px 2px 1px rgba(189, 242, 174, 1);
+  border-radius: 20px;
+
+  opacity: 1;
+
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+  padding: 40px;
+
+  & {
+    @media screen and (max-width: 767px) {
+      background-image: url(../images/modal/fruit@1x_mobile.png);
+      background-size: 90px;
+      background-repeat: no-repeat;
+      background-position: bottom left;
+
+      @media (min-device-pixel-ratio: 2),
+        (min-resolution: 192dpi),
+        (min-resolution: 2dppx) {
+        background-image: url(../images/modal/fruit@2x_mobile.png);
+      }
+    }
+  }
+
+  & {
+    @media screen and (min-width: 768px) {
+      width: 500px;
+
+      background-image: url(../images/modal/fruit@1x_desctop.png);
+      background-size: 104px;
+      background-repeat: no-repeat;
+      background-position: bottom right;
+
+      @media (min-device-pixel-ratio: 2),
+        (min-resolution: 192dpi),
+        (min-resolution: 2dppx) {
+        background-image: url(../images/modal/fruit@2x_desctop.png);
+      }
+    }
+  }
+
+  & {
+    @media screen and (min-width: 1280px) {
+      width: 600px;
+
+      background-image: url(../images/modal/fruit@1x_mobile.png),
+        url(../images/modal/fruit@1x_desctop.png);
+      background-size: 90px, 104px;
+      background-repeat: no-repeat;
+      background-position: bottom left, bottom right;
+
+      @media (min-device-pixel-ratio: 2),
+        (min-resolution: 192dpi),
+        (min-resolution: 2dppx) {
+        background-image: url(../images/modal/fruit@2x_mobile.png),
+          url(../images/modal/fruit@2x_desctop.png);
+      }
+    }
+  }
+}
+
+.backdrop.is-hidden .modal {
+  opacity: 0;
+  transform: translate(-50%, -50%) scale(0.5);
+}
+
+.modal__button--close {
+  position: absolute;
+
+  top: 0;
+  right: 0;
+  margin-top: 8px;
+  margin-right: 8px;
+  padding: 0;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  border-radius: 50%;
+  box-sizing: border-box;
+
+  width: 30px;
+  height: 30px;
+  right: 4px;
+  top: 3px;
+
+  background-color: #fff;
+  border: 1px solid #7eb101;
+
+  cursor: pointer;
+
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+  &:hover,
+  &:focus {
+    color: #597d00;
+  }
+}
+
+.modal__close {
+  fill: currentColor;
+}
+
+/* форма модального окна */
+
+.modal-form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  &__title {
+    display: block;
+
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 1.2;
+    text-align: center;
+
+    color: #2c2c2c;
+    margin-bottom: 40px;
+
+    & {
+      @media screen and (min-width: 1280px) {
+        line-height: 1.4;
+      }
+    }
+  }
+}
+
+.modal-form__input {
+  box-sizing: border-box;
+  position: relative;
+
+  max-width: 278px;
+  width: 100%;
+  height: 42px;
+
+  border: 0.9px solid #ffe550;
+  border-radius: 30px;
+
+  background-color: #fefefe;
+
+  padding: 12px 11px;
+
+  outline: none;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-right: auto;
+  margin-left: auto;
+  margin-bottom: 10px;
+
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 150%;
+
+  color: #2c2c2c;
+
+  & {
+    @media screen and (min-width: 768px) {
+      max-width: 394px;
+    }
+  }
+
+  &::placeholder {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 150%;
+
+    color: #505050;
+  }
+}
+
+// Valid/Invalid
+
+.modal-form__input--name:not(:placeholder-shown):required:valid {
+  border-color: #7eb101;
+}
+
+.modal-form__input--name:not(:placeholder-shown):required:invalid {
+  border-color: #ff705d;
+}
+
+.modal-form__input--tel:not(:placeholder-shown):required:valid {
+  border-color: #7eb101;
+}
+
+.modal-form__input--tel:not(:placeholder-shown):required:invalid {
+  border-color: #ff705d;
+}
+
+.modal-form__input--mail:not(:placeholder-shown):valid {
+  border-color: #7eb101;
+}
+
+.modal-form__input--mail:invalid {
+  border-color: #ff705d;
+}
+
+.modal__notification {
+  opacity: 0;
+  width: 300px;
+
+  margin-bottom: 30px;
+  margin-left: auto;
+  margin-right: auto;
+
+  transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.modal__icon {
+  fill: #ff705d;
+
+  margin-right: 4px;
+}
+
+.modal__icon .modal__icon--error {
+  opacity: 0;
+  transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.modal__notification--text {
+  font-weight: 400;
+  font-size: 10px;
+  line-height: 150%;
+
+  color: #ff705d;
+}
+
+.modal-form__input--name:invalid:not(:placeholder-shown)
+  ~ .modal__notification--name,
+.modal__icon .modal__icon--error {
+  opacity: 1;
+}
+
+.modal-form__input--tel:invalid:not(:placeholder-shown)
+  ~ .modal__notification--tel,
+.modal__icon .modal__icon--error {
+  opacity: 1;
+}
+
+.modal-form__input--mail:invalid:not(:placeholder-shown)
+  ~ .modal__notification--mail,
+.modal__icon .modal__icon--error {
+  opacity: 1;
+}
+
+/* Кнопка формы */
+
+.modal-form__button {
+  font-family: inherit;
+  background-color: #bbf330;
+  color: #2c2c2c;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 150%;
+  cursor: pointer;
+
+  border-radius: 30px;
+  border: none;
+
+  width: 106px;
+  height: 42px;
+  display: block;
+  margin: 0 auto;
+
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+  &:hover,
+  &:focus {
+    background-color: #b5ff00;
+  }
+}

@@ -1,0 +1,84 @@
+<!-- Модальне вікно -->
+<div data-modal class="backdrop ">
+  <div class="modal">
+    <button data-modal-close class="modal__button--close">
+      <svg class="modal__close" width="12" height="12">
+        <use href="./images/sprite/sprite-not-optimised.svg#icon-close"></use>
+      </svg>
+    </button>
+    <!-- Розмітка модального вікна -->
+
+    <form name="modal-form" autocomplete="off">
+      <strong class="modal-form__title"
+        >Enter your details, we will call you back!</strong
+      >
+
+      <label class="visually-hidden" for="name"></label>
+      <input
+        class="modal-form__input modal-form__input--name"
+        type="text"
+        name="name"
+        id="name"
+        placeholder="Enter your name"
+        required
+        minlength="3"
+      />
+
+      <div class="modal__notification modal__notification--name">
+        <svg class="modal__icon" width="12px" height="12px">
+          <use
+            class="modal__icon--error"
+            href="./images/sprite/sprite-optimised.svg#icon-error"
+          ></use></svg
+        ><span class="modal__notification--text"
+          >Please enter at least 3 characters</span
+        >
+      </div>
+
+      <label class="visually-hidden" for="tel"></label>
+      <input
+        class="modal-form__input modal-form__input--tel"
+        type="tel"
+        name="tel"
+        id="tel"
+        placeholder="+380991234567"
+        required
+        minlength="13"
+      />
+
+      <div class="modal__notification modal__notification--tel">
+        <svg class="modal__icon" width="12px" height="12px">
+          <use
+            class="modal__icon--error"
+            href="./images/sprite/sprite-optimised.svg#icon-error"
+          ></use></svg
+        ><span class="modal__notification--text"
+          >Specify the number in the format +380991234567</span
+        >
+      </div>
+
+      <label class="visually-hidden" for="email"></label>
+
+      <input
+        class="modal-form__input modal-form__input--mail"
+        type="email"
+        name="email"
+        id="email"
+        placeholder="Enter your email"
+      />
+
+      <div class="modal__notification modal__notification--mail">
+        <svg class="modal__icon" width="12px" height="12px">
+          <use
+            class="modal__icon--error"
+            href="./images/sprite/sprite-optimised.svg#icon-error"
+          ></use></svg
+        ><span class="modal__notification--text"
+          >Not a valid email address (example&#64;email.com)</span
+        >
+      </div>
+
+      <button data-modal-open class="modal-form__button" type="submit">Send</button>
+    </form>
+  </div>
+</div>
