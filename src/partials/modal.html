@@ -1,7 +1,7 @@
 <!-- Модальне вікно -->
-<div data-modal class="backdrop is-hidden">
+<div  class="backdrop is-hidden" data-modal>
   <div class="modal">
-    <button data-modal-close class="modal__button--close">
+    <button  class="modal__button--close" data-modal-close>
       <svg class="modal__close" width="12" height="12">
         <use href="./images/sprite/sprite-not-optimised.svg#icon-close"></use>
       </svg>
@@ -29,8 +29,9 @@
           <use
             class="modal__icon--error"
             href="./images/sprite/sprite-optimised.svg#icon-error"
-          ></use></svg
-        ><span class="modal__notification--text"
+          ></use>
+        </svg>
+        <span class="modal__notification--text"
           >Please enter at least 3 characters</span
         >
       </div>
@@ -78,7 +79,9 @@
         >
       </div>
 
-      <button class="modal-form__button" type="submit">Send</button>
+      <button  class="modal-form__button" type="submit">
+        Send
+      </button>
     </form>
   </div>
 </div>
