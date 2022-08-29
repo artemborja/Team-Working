@@ -1,2 +1,0 @@
-!function(){!function(){var e={openModalBtn:document.querySelector("[data-modal-open]"),closeModalBtn:document.querySelector("[data-modal-close]"),modal:document.querySelector("[data-modal]")};function t(){e.modal.classList.toggle("is-hidden")}e.openModalBtn.addEventListener("click",t),e.closeModalBtn.addEventListener("click",t)}();new Swiper(".swiper",{container:".reviews-slider",controls:!1,items:3,slideBy:"page",autoplay:!1,navPosition:"bottom",navigation:{nextEl:".btn-right",prevEl:".btn-left"}})}();
-//# sourceMappingURL=index.f1edc23e.js.map
