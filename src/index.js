@@ -1,5 +1,5 @@
-import "./modal"
-import "./header-scroll"
+import "./modal";
+import "./header-scroll";
 
 $(document).ready(function(){
     $('.block__title').click(function(event) {
