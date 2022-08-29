@@ -11,12 +11,24 @@
     // max-width: 704px;
   }
 
+  @media screen and (min-width: 1280px) { 
+        padding-left: 16px;
+        padding-right: 16px;
+        // max-width: 1248px;
+    }
+}
+
+.hero__title {
+
+    margin-top: 60px;
+
   @media screen and (min-width: 1280px) {
     padding-left: 16px;
     padding-right: 16px;
     // max-width: 1248px;
   }
 }
+
 
 .hero__title {
   margin-top: 60px;
@@ -92,7 +104,8 @@
   cursor: pointer;
 }
 .second-container {
-  position: relative;
+    display: flex;
+    position: relative;
 }
 .swiper {
   max-width: 528px;
