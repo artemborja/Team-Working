@@ -1,36 +1,45 @@
 .hero {
-  display: flex;
-  padding-left: 20px;
-  padding-right: 20px;
-
-  // max-width: 280px;
-
-  @media screen and (min-width: 768px) {
-    padding-left: 34px;
-    padding-right: 34px;
-    // max-width: 704px;
+  margin: 0 auto;
+  padding-top: 60px;
+  padding-bottom: 50px;
+  @include tablet {
+    padding-bottom: 0;
   }
-
-  @media screen and (min-width: 1280px) { 
-        padding-left: 16px;
-        padding-right: 16px;
-        // max-width: 1248px;
-    }
+  @include tablet {
+    padding-top: 14px;
+    padding-bottom: 14px;
+  }
 }
+//   display: flex;
+// padding-left: 20px;
+// padding-right: 20px;
+
+// max-width: 280px;
+
+//   @media screen and (min-width: 768px) {
+//     padding-left: 34px;
+//     padding-right: 34px;
+//     // max-width: 704px;
+//   }
+
+//   @media screen and (min-width: 1280px) {
+//         padding-left: 16px;
+//         padding-right: 16px;
+//         // max-width: 1248px;
+//     }
+// }
 
 .second-container {
   display: flex;
   // position: relative;
 }
 .hero__title {
-
-    margin-top: 60px;
+  margin-top: 60px;
 
   @media screen and (min-width: 1280px) {
     // max-width: 1248px;
   }
 }
-
 
 .hero__title {
   margin-top: 60px;
@@ -107,53 +116,69 @@
 }
 
 .swiper {
-  max-width: 528px;
-  max-height: 528px;
-
-  // display: flex;
-
   @media screen and (max-width: 767px) {
     display: none;
   }
-  @media screen and (min-width: 768px) {
-    // margin-top: 163px;
-    // margin-right: 14px;
-    // margin-bottom: 14px;
-    // margin-left: 40px;
+  @include tablet {
+    width: 320px;
+    height: 320px;
   }
-  @media screen and (min-width: 1280px) {
-    margin-top: 14px;
-    margin-right: 14px;
-    margin-bottom: 14px;
-    margin-left: 152px;
+  @include desktop {
+    width: 528px;
+    height: 528px;
   }
+
+  // display: flex;
+
+  // @media screen and (min-width: 768px) {
+  // margin-top: 163px;
+  // margin-right: 14px;
+  // margin-bottom: 14px;
+  // margin-left: 40px;
 }
+// @media screen and (min-width: 1280px) {
+//   margin-top: 14px;
+//   margin-right: 14px;
+//   margin-bottom: 14px;
+//   margin-left: 152px;
+// }
+// }
 .swiper-slide {
-  min-width: 292px;
-  margin-top: 163px;
+  width: 100%;
+  border-width: 14px;
+  border-style: solid;
+  border-radius: 50% 50%;
+  border-color: var(--yellow-main);
+  &:hover,
+  &:focus,
+  &:active {
+    border-color: var(--button-green);
+  }
+
+  // min-width: 292px;
+  // margin-top: 163px;
   // margin-right: 54px;
   // margin-left: 54px;
- 
-     @media screen and (max-width: 767px) {
-       display: none;
-    }
- 
-    @media screen and (min-width: 1280px) {
-     min-width: 528px;
-     margin-top: 14px;
-    }
 
-}
-.hero__eat--card {
-  border: 14px solid #ffe550;
-  border-radius: 50%;
-}
+  // @media screen and (max-width: 767px) {
+  //   display: none;
+  // }
 
-.hero__eat--card:hover,
-.hero__eat--card:focus {
-  border: 14px solid #bbf330;
+  @media screen and (min-width: 1280px) {
+    border-width: 26px;
+    // min-width: 528px;
+    // margin-top: 14px;
+  }
 }
+// .hero__eat--card {
+//   border: 14px solid #ffe550;
+//   border-radius: 50%;
+// }
 
+// .hero__eat--card:hover,
+// .hero__eat--card:focus {
+//   border: 14px solid #bbf330;
+// }
 
 .btn-back {
   position: absolute;
@@ -175,4 +200,3 @@
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.06);
   background-color: #ffffff;
 }
-
