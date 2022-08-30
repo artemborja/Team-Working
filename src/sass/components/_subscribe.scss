@@ -1,7 +1,7 @@
 .subscribe {
   margin-top: -20px;
   position: relative;
- z-index: 200;
+ z-index: 100;
 
   & {
     @media screen and (max-width: 767px) {
