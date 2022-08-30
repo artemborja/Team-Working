@@ -1,10 +1,56 @@
-    <section class="hero">
-        <div class="container second-container">
-            <div class="hero__container">
-            <h1 class="hero__title">Enjoy Your Favorite Food From Anywhere</h1>
-            <p class="hero__title--text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique. Duis cursus, mi quis viverra ornare, eros dolor interdum nulla, ut commodo diam libero vitae erat.</p>
-            <button class="hero__btn" type="button" data-modal-open>Order Now</button>
-          </div>
+<section class="hero">
+  <div class="container second-container">
+    <div class="hero__container">
+      <h1 class="hero__title">Enjoy Your Favorite Food From Anywhere</h1>
+      <p class="hero__text">
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse
+        varius enim in eros elementum tristique. Duis cursus, mi quis viverra
+        ornare, eros dolor interdum nulla, ut commodo diam libero vitae erat.
+      </p>
+      <button class="hero__btn" type="button" data-modal-open>Order Now</button>
+    </div>
+
+
+    <div class="swiper">
+      <!-- Additional required wrapper -->
+      <div class="swiper-wrapper">
+        <!-- Slides -->
+        <div class="swiper-slide">
+          <img
+            class="hero__eat--card"
+            srcset="
+              ./images/hero/eat/foto1@292.png   292w,
+              ./images/hero/eat/foto1@528.png   528w,
+              ./images/hero/eat/foto1@584.png   584w,
+              ./images/hero/eat/foto1@1056.png 1056w
+            "
+            src="./images/hero/eat/foto1@528.png"
+          />
+        </div>
+        <div class="swiper-slide">
+          <img
+            class="hero__eat--card"
+            srcset="
+              ./images/hero/eat/foto2@292.png   292w,
+              ./images/hero/eat/foto2@528.png   528w,
+              ./images/hero/eat/foto2@584.png   584w,
+              ./images/hero/eat/foto2@1056.png 1056w
+            "
+            src="./images/hero/eat/foto2@528.png"
+          />
+        </div>
+        <div class="swiper-slide">
+          <img
+            class="hero__eat--card"
+            srcset="
+              ./images/hero/eat/foto3@292.png   292w,
+              ./images/hero/eat/foto3@528.png   528w,
+              ./images/hero/eat/foto3@584.png   584w,
+              ./images/hero/eat/foto3@1056.png 1056w
+            "
+            src="./images/hero/eat/foto3@528.png"
+          />
+        </div>
 
           <div class="swiper">
             <!-- <div class="swiper-button-prev"></div>
@@ -67,5 +113,35 @@
             </div>
           </div>
 
-        
-    </section>
+
+        <!-- If we need navigation buttons -->
+
+        <button class="btn-left">
+          <svg class="icon-left">
+            <use
+              class="left-desktop"
+              href="./images/sprite/sprite-optimised.svg#icon-arrow-left-desktop"
+            ></use>
+            <use
+              class="left-tablet"
+              href="./images/sprite/sprite-optimised.svg#icon-arrow-left-tablet"
+            ></use>
+          </svg>
+        </button>
+
+        <button class="btn-right">
+          <svg class="icon-right">
+            <use
+              class="right-desktop"
+              href="./images/sprite/sprite-optimised.svg#icon-arrow-right-desktop"
+            ></use>
+            <use
+              class="right-tablet"
+              href="./images/sprite/sprite-optimised.svg#icon-arrow-right-tablet"
+            ></use>
+          </svg>
+        </button>
+      </div>
+    </div>
+  </div>
+</section>
