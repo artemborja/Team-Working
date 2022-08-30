@@ -1,63 +1,56 @@
 .subscribe {
-  min-width: 280px;
-  margin-left: auto;
-  margin-right: auto;
-  padding-left: 0;
-  padding-right: 0;
-  padding-bottom: 60px;
+  margin-top: -20px;
+  position: relative;
+ z-index: 200;
 
   & {
-    @media screen and (max-width: 479px) {
-      width: 100%;
-      padding-left: 20px;
-      padding-right: 20px;
-      margin-left: auto;
-    }
-  }
+    @media screen and (max-width: 767px) {
+      background-image: url(../images/subscribe/banan@1x_mobile.png);
+      background-size: 161px;
+      background-repeat: no-repeat;
+      background-position: top center;
 
-  & {
-    @media screen and (min-width: 480px) {
-      width: 440px;
+      @media (min-device-pixel-ratio: 2),
+        (min-resolution: 192dpi),
+        (min-resolution: 2dppx) {
+        background-image: url(../images/subscribe/banan@2x_mobile.png);
+      }
     }
   }
 
   & {
     @media screen and (min-width: 768px) {
-      width: 704px;
-      padding-bottom: 100px;
+      background-image: url(../images/subscribe/banan@1x_tablet.png);
+      background-size: 281px;
+      background-repeat: no-repeat;
+      background-position: top -140px right;
+
+      @media (min-device-pixel-ratio: 2),
+        (min-resolution: 192dpi),
+        (min-resolution: 2dppx) {
+        background-image: url(../images/subscribe/banan@2x_tablet.png);
+      }
     }
   }
 
   & {
     @media screen and (min-width: 1280px) {
-      width: 1247px;
-      padding-bottom: 100px;
+      margin-top: -67px;
+
+      background-image: url(../images/subscribe/banan@1x_desctop.png);
+      background-size: 546px;
+      background-repeat: no-repeat;
+      background-position: bottom -20px right;
+
+      @media (min-device-pixel-ratio: 2),
+        (min-resolution: 192dpi),
+        (min-resolution: 2dppx) {
+        background-image: url(../images/subscribe/banan@2x_desctop.png);
+      }
     }
   }
 }
 
-.subscribe__picture {
-  z-index: 100;
-  max-width: 161px;
-  margin-bottom: 17px;
-  margin-left: 69px;
-
-  & {
-    @media screen and (min-width: 768px) {
-      min-width: 281px;
-      margin-bottom: 20px;
-      margin-left: auto;
-      margin-right: -32px;
-    }
-  }
-
-  & {
-    @media screen and (min-width: 1280px) {
-      min-width: 608px;
-      margin-bottom: -216px;
-    }
-  }
-}
 
 .subscribe__title {
   font-weight: 700;
@@ -115,7 +108,6 @@
   padding: 12px 11px;
 
   outline: none;
-
 
   & {
     @media screen and (min-width: 768px) {
