@@ -1,33 +1,77 @@
 .offering {
- @media screen and(min-width:380px) {
-  
- }
-  margin-top: 20px;
-  padding-top:60px;
-  
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
-z-index: 100;
-  
-  background-image: url(../images/offering/background@1x-mb.png) ;
+ 
+  padding-top: 60px;
+  padding-bottom: 94px;
 
-  @media screen and(min-width:768px) {
+  & {
+    @media screen and (max-width: 479px) {
+      max-width: 479px;
+      background-image: url(../images/offering/@1x-bakc-mob.png);
+      background-size: 100%;
+      background-repeat: no-repeat;
+      background-position:top center;
 
-    background-image: url(../images/offering/background@1-tab.png);
+      @media (min-device-pixel-ratio: 2),
+        (min-resolution: 192dpi),
+        (min-resolution: 2dppx) {
+        background-image: url(../images/offering/@2x-bakc-mob.png);
+      }
+    }
   }
 
-  @media screen and(min-width:1280px) {
-   
-    background-image: url(../images/offering/background@1x-desk.png);
-    padding-bottom: 60px;
+  & {
+    @media screen and (min-width: 480px) {
+      max-width: 767px;
+      background-image: url(../images/offering/@1x-bakc-mob2.png);
+      background-size: 100%;
+      background-repeat: no-repeat;
+      background-position:top center;
+
+      @media (min-device-pixel-ratio: 2),
+        (min-resolution: 192dpi),
+        (min-resolution: 2dppx) {
+        background-image: url(../images/offering/@2x-bakc-mob2.png);
+      }
+    }
+  }
+
+  & {
+    @media screen and (min-width: 768px) {
+      max-width: 1279px;
+      background-image: url(../images/offering/@1x-bakcgtab.png);
+      background-size: 100%;
+      background-repeat: no-repeat;
+      background-position: top center;
+
+      @media (min-device-pixel-ratio: 2),
+        (min-resolution: 192dpi),
+        (min-resolution: 2dppx) {
+        background-image: url(../images/offering/@2x-bakcgtab.png);
+      }
+    }
+  }
+
+  & {
+    @media screen and (min-width: 1280px) {
+      max-width: 1980px;
+      background-image: url(../images/offering/@1x-bakcgdesc.png);
+      background-size: 100%;
+      background-repeat: no-repeat;
+      background-position: top center;
+
+      @media (min-device-pixel-ratio: 2),
+        (min-resolution: 192dpi),
+        (min-resolution: 2dppx) {
+        background-image: url(../images/offering/@2x-bakcgdesc.png);
+      }
+    }
   }
 }
 
 .container-offering{
   display: flex;
   flex-direction: column;
-  margin-bottom: 60px;
+  
   @media screen and(min-width:768px) {
 flex-direction: column;
   }
