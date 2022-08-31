@@ -1,121 +1,43 @@
 <section class="offering">
-  <div class="container">
-    <div class="img__title">
-      <div class="img__wrapper">
-        <div class="img__bc">
-          <picture>
-            <!--DESKTOP-->
-            <source media="(min-width: 1280px)" srcset="
-          ./images/offering/aple@1x-desk.webp 1x,
-          ./images/offering/aple@2x-desk.webp 2x
-        " type="png/webp" />
-            <source media="(min-width: 1280px)" srcset="
-          ./images/offering/aple@1x-desk.png 1x,
-          ./images/offering/aple@2x-desk.png 2x
-        " type="png/webp" />
-            <!-- TABLET -->
-            <source media="(min-width: 768px)" srcset="
-          ./images/offering/aple@1x-tab.webp 1x,
-          ./images/offering/aple@2x-tab.webp 2x
-        " type="png/webp" />
-            <source media="(min-width: 768px)" srcset="
-          ./images/offering/aple@1x-tab.png 1x,
-          ./images/offering/aple@2x-tab.png 2x
-        " type="png/webp" />
-            <source media="(min-width: 768px)" srcset="
-          ./images/offering/aple@1x-tab-1.png 1x,
-          ./images/offering/aple@2x-tab-1.png 2x
-        " type="png/webp" />
-            <source media="(min-width: 768px)" srcset="
-          ./images/offering/aple@1x-tab-1.webp 1x,
-          ./images/offering/aple@2x-tab-1.webp 2x
-        " type="png/webp" />
-            <source media="(min-width: 768px)" srcset="
-          ./images/offering/aple@1x-tab-2.png 1x,
-          ./images/offering/aple@2x-tab-2.png 2x
-        " type="png/webp" />
-            <!--MOBILE -->
-            <source media="(max-width: 767px)" srcset="
-          ./images/offering/aple@1x-mb.webp 1x,
-          ./images/offering/aple@2x-mb.webp 2x
-        " type="png/webp" />
-            <source media="(max-width: 767px)" srcset="
-          ./images/offering/aple@1x-mb.png 1x,
-          ./images/offering/aple@2x-mb.png 2x
-        " type="png/webp" /> <img class="img img__big-title" src="./images/offering/aple@1x-mb.png" alt="aple"
-              width="202" height="256" />
-        </div>
-      </div>
+  <div class="container container-offering">
+    <div class="offering-left">
       <picture>
-        <source media="(min-width: 768px), (max-width: 1279px)" srcset="
-              ./images/offering/aple@1x-tab-1.png 1x,
-              ./images/offering/aple@2x-tab-1.png 2x
-            " type="png/webp" />
-        <source media="(min-width: 768px), (max-width: 1279px)" srcset="
-              ./images/offering/aple@1x-tab-1.webp 1x,
-              ./images/offering/aple@2x-tab-1.webp 2x
-            " type="png/webp" />
-        <img class="image__offering" src="/src/images/offering/aple@1x-tab-1.png" alt="green-aple" width="166"
-          height="210" />
-      </picture>
+      <!--DESKTOP-->
+      <source media="(min-width: 1280px)" srcset="./images/offering/of-aple@1-desc.png 1x,
+      ./images/offering/of-aple@2x-desc.png 2x" type="image/png"/>
+         <!-- TABLET -->
+      <source media="(min-width:768px), (max-width: 1279.98px)" srcset="./images/offering/of-aple@1x-tab.png 1x,
+      ./images/offering/of-aple@2x-tab.png 2x" type="image/png" />
+      <!--MOBILE -->
+      <source media="(min-width:380px), (max-width:767.98px)" srcset="./images/offering/of-pple@1x-mobile.png 1x,
+      ./images/offering/of-pple@1x-mobile.png 2x" type="image/png" />
+      <img src="./images/offering/of-pple@1x-mobile.png" alt="greenaplle">
+    </picture></div>
 
-      <picture>
-        <source media="(min-width: 768px), (max-width: 1279px)" srcset="
-              ./images/offering/aple@1x-tab-2.webp 1x,
-              ./images/offering/aple@2x-tab-2.webp 2x
-            " type="png/webp" />
-        <source media="(min-width: 768px), (max-width: 1279px)" srcset="
-              ./images/offering/aple@1x-tab-2.png 1x,
-              ./images/offering/aple@2x-tab-2.png 2x
-            " type="png/webp" />
-        <img class="image__offering image__left" src="/src/images/offering/aple@1x-tab-2.png" alt="green-aple"
-          width="108" height="136" />
-      </picture>
-    </div>
-  </div>
-  <div class="name__content">
-    <div class="name__list">
-      <h2 class="title name__title">What’s&nbsp;Special&nbsp;About Our Offerings</h2>
-      <p class="list__about">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse
+    <div class="name__content name__list">
+    <h2 class="title name__title">What’s&nbsp;Special&nbsp;About Our Offerings</h2>
+      <p class="list__about-title">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse
         varius enim in eros elementum
         tristique. Duis cursus, mi quis viverra ornare, eros dolor interdum nulla, ut commodo diam
         libero vitae
         erat.</p>
+        
+  <ul class="list_container">
+        <li class="list list__card--about">
+          <h3 class="list__name list">Fasest Delivery</h3>
+          <p class="list__about">Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+            Suspendisse varius enim in eros.</p>
+        </li>
+        <li class="list list__card--about">
+          <h3 class="list list__name list_right-side">Easy To Order</h3>
+          <p class="list list__about">Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+            Suspendisse varius enim in eros.</p>
+        </li>
+      </ul>
+      <ul class="list_container--about">
+        <li class="list list-btn"> <button class="btn btn-offering" type="button">Order Now</button></li>
+        <li class="list icon-more">Read More<svg class="icon-vektor" width="7" heigth="9"><use href="./images/sprite/sprite-not-optimised.svg#icon-vector-left"></use></svg></li>
+      </ul>
     </div>
-    <div class="cards">
-      <div class="card__wrap">
-        <div class="icon__br">
-          <svg class="icon-media" width="26" height="26">
-            <use href="../src/images/sprite/sprite-not-optimised.svg#icon-icon-left"></use>
-          </svg>
-        </div>
-        <h3 class="list__name">Fasest Delivery</h3>
-        <p class="list__about">Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-          Suspendisse varius enim in eros.</p>
-      </div>
-
-      <div class="card__wrap">
-        <div class="icon__br"><svg class="icon-media" width="26" height="26">
-            <use href="../src/images/sprite/sprite-not-optimised.svg#icon-icon-right"></use>
-          </svg></div>
-
-        <h3 class="list__name">Easy To Order</h3>
-        <p class="list__about">Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-          Suspendisse varius enim in eros.</p>
-      </div>
-    </div>
- 
-  
-  
- <div class="block">
-  <button class="btn" type="button">Order Now</button>
- <div class="block__item">
-      <div class="block__title">Read More</div>
-      <div class="block__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-        Suspendisse varius enim in eros.</div>
-    </div></div>
-  </div> </div>
-</div>
-
   </div>
 </section>
